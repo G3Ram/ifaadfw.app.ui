@@ -14,14 +14,14 @@ jobs:
       - name: Use Node.js (16.13.0)
         uses: actions/setup-node@v1
         with:
-          node-version: "16.13.0"
+          node-version: '16.13.0'
 
       - name: Install Packages
         run: npm ci
 
       - name: Build Step
         env:
-          CI: ""
+          CI: ''
         run: npm run build
 
       - name: Upload artifacts
@@ -34,6 +34,7 @@ jobs:
         run: npx semantic-release
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN}}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   commit-build:
     needs: build
