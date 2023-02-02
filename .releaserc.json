@@ -1,6 +1,6 @@
 {
     "branches":"main",
-    "repositoryUrl":"https://github.com/ifaadfw.app.ui",
+    "repositoryUrl":"https://github.com/G3Ram/ifaadfw.app.ui",
     "debug":"true",
     "plugins": [
         "@semantic-release/commit-analyzer",
